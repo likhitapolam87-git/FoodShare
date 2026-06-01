@@ -1,9 +1,4 @@
-document.querySelector("form").addEventListener("submit", function(event) {
+ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
-
-    document.getElementById("thankyouModal").style.display = "flex";
+    alert("Thank You for Donating Food!");
 });
-
-function closeModal() {
-    document.getElementById("thankyouModal").style.display = "none";
-}
