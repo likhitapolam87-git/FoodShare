@@ -7,6 +7,7 @@
 <body>
 
 <div class="container">
+
     <h1>FoodShare</h1>
     <h2>Food Donation and Hunger Relief Platform</h2>
 
@@ -14,8 +15,6 @@
         Don't waste food. Donate extra food to nearby orphanages,
         temples, old-age homes, and NGOs.
     </p>
-
-    <button>Donate Food</button>
 
     <h3>Nearby Organizations</h3>
 
@@ -40,30 +39,28 @@
     <h3>Donate Food</h3>
 
     <form>
-        <input type="text" placeholder="Your Name"><br><br>
-
-        <input type="tel" placeholder="Phone Number"><br><br>
-
-        <input type="text" placeholder="Food Type"><br><br>
-
-        <input type="number" placeholder="Quantity"><br><br>
-
-        <input type="text" placeholder="Address"><br><br>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="tel" placeholder="Phone Number" required><br><br>
+        <input type="text" placeholder="Food Type" required><br><br>
+        <input type="number" placeholder="Quantity" required><br><br>
+        <input type="text" placeholder="Address" required><br><br>
 
         <button type="submit">Submit Donation</button>
     </form>
 
-    <h3>About Us</h3>
+</div>
 
-    <p>
-        FoodShare is a platform designed to reduce food wastage and help
-        people in need. It connects food donors with nearby temples,
-        orphanages, and old-age homes.
-    </p>
-
+<!-- POPUP -->
+<div id="thankyouModal" class="modal">
+    <div class="modal-content">
+        <h2>🙏 Thank You!</h2>
+        <p>Your food donation request has been submitted successfully.</p>
+        <button onclick="closeModal()">OK</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
 
 </body>
+</html>
 </html>
